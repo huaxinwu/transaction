@@ -18,7 +18,7 @@
 .STYLE2 {
 	color: #CCCCCC;
 	font-size: 14px;
-}  
+}
 .STYLE3 {font-size: 14px}
 -->
 </style>
