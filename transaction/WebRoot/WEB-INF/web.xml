@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>transaction</display-name>
+  <servlet>
+    <servlet-name>StatusRecogniseServlet</servlet-name>
+    <servlet-class>com.wxh.servlet.StatusRecogniseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MsgPublishServlet</servlet-name>
+    <servlet-class>com.wxh.servlet.MsgPublishServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetMessageListServlet</servlet-name>
+    <servlet-class>com.wxh.servlet.GetMessageListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetMessageServlet</servlet-name>
+    <servlet-class>com.wxh.servlet.GetMessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CommitReplyServlet</servlet-name>
+    <servlet-class>com.wxh.servlet.CommitReplyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CommitCriticismServlet</servlet-name>
+    <servlet-class>com.wxh.servlet.CommitCriticismServlet</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>StatusRecogniseServlet</servlet-name>
+    <url-pattern>/StatusRecogniseAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MsgPublishServlet</servlet-name>
+    <url-pattern>/MsgPublish</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetMessageListServlet</servlet-name>
+    <url-pattern>/GetMessageList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetMessageServlet</servlet-name>
+    <url-pattern>/GetMessage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommitReplyServlet</servlet-name>
+    <url-pattern>/CommitReply</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommitCriticismServlet</servlet-name>
+    <url-pattern>/CommitCriticism</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+</web-app>
